@@ -64,31 +64,33 @@ h1 {
 	padding: 20px;
 	text-align: center;
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 23px;
 	font-weight: bold;
 }
 ul {
 	float: right;
 	padding: 20px 0px 20px 20px;
+	box-sizing: border-box;
 }
 li {
 	list-style-type: none;
 	display: inline;
-    border-right:1px solid #777777;
+    border-right: 1px solid #777777;
 }
-li a {
+li:last-child{
+	border-right: none;
+}
+#contact{
+    padding-right: 0px;
+}
+li a, li a:visited {
+	color: #777777;
 	text-decoration: none;
 	text-align: center;
-	margin: 5px;
-	padding: 10px;
-}
-li:last-child {
-	margin-right: 0px;
-    border-right: none;
+	padding: 15px;
 }
 li a:hover {
-	background-color: #4aaaa5;
-	color: #ffffff;
+	color: #4aaaa5;
 	cursor: pointer;
 }
 section{
@@ -97,14 +99,14 @@ section{
 	clear: both;
 	margin: auto;
 	margin-top: 20px;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	border: 1px solid #dddddd;
 	box-sizing: border-box;
 }
 h2{
 	color: #4aaaa5;
 	font-family: Georgia, Times, 'Times New Roman', serif;
-	font-size: 22px;
+	font-size: 23px;
 	font-weight: bold;
 	padding-bottom: 15px;
 	padding-top: 5px;	
@@ -138,12 +140,13 @@ footer {
 }
 form {
 	color: #777777;
+	width: 100%;
 }
 .submit {
 	background-color: #4aaaa5;
     border: none;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-decoration: none;
     cursor: pointer;
     font-size: 100%;
@@ -153,18 +156,23 @@ form {
 	color: #ffffff;
 }
 .info{
-	width: 888px;
+	width: 100%;
 	padding: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
 }
 textarea {
 	height: 200px;
-	border: solid 1px #777777;
+	border: 1px solid #777777;
+	padding: 5px;
+	box-sizing: border-box;
 }
 .imgbox {
   position: relative; 
-  max-width: 275px; /* Maximum width */
+  max-width: 274px; /* Maximum width */
   float: left;
   margin: 0px 40px 50px 0px;
+  vertical-align: middle;
 }
 .imgbox .caption {
   position: absolute; /* Position the background text */
@@ -177,8 +185,19 @@ textarea {
   box-sizing: border-box; /*padding & border are included in the set width*/
 }
 .imgbox img {
-	width: 275px;
-	height: 205px;
+	width: 274px;
+	height: 206px;
+}
+.imgbox a {
+	text-decoration: none;
+}
+.imgbox a:hover {
+	-webkit-filter: drop-shadow(8px 8px 10px #4aaaa5);
+	filter: drop-shadow(8px 8px 10px #4aaaa5);
+}
+.imgbox a:active {
+	-webkit-filter: opacity(70%);
+	filter: opacity(70%);
 }
 h3 {
 	font-family: Georgia, Times, 'Times New Roman', serif;
