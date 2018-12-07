@@ -1,4 +1,4 @@
-body{
+body {
 	color: #777777;
 	background: url(../images/extra_clean_paper.png) left top repeat;
 	background-color: #ffffff;
@@ -7,7 +7,7 @@ body{
 }
 header {
 	background-color: #ffffff;
-  	border: solid 2px #cccccc;
+	border: solid 2px #cccccc;
 }
 hr {
 	border: solid 1px #cccccc;
@@ -35,13 +35,13 @@ ul {
 li {
 	list-style-type: none;
 	display: inline;
-    border-right: 1px solid #777777;
+	border-right: 1px solid #777777;
 }
-li:last-child{
+li:last-child {
 	border-right: none;
 }
-#contact{
-    padding-right: 0px;
+#contact {
+	padding-right: 0px;
 }
 li a, li a:visited {
 	color: #777777;
@@ -53,17 +53,19 @@ li a:hover {
 	color: #4aaaa5;
 	cursor: pointer;
 }
-section{
+/*section*/
+.clearfix  {
 	max-width: 960px;
+	/*height: 550px;*/
 	background-color: #ffffff;
 	clear: both;
 	margin: auto;
 	margin-top: 20px;
-	/*padding-bottom: 20px;*/
 	border: 1px solid #dddddd;
 	box-sizing: border-box;
+	overflow: auto;
 }
-h2{
+h2 {
 	color: #4aaaa5;
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-size: 23px;
@@ -81,9 +83,7 @@ h2{
 #mypic {
 	float: left;
 	margin-right: 20px;
-}
-.clearfix {
-	overflow: auto;
+	margin-bottom: 10px;
 }
 footer {
 	background-color: #666666;
@@ -92,11 +92,12 @@ footer {
 	color: #C2C7C3;
 	clear:both;
 	position: fixed;
-   	left: 0;
-   	bottom: 0;
-   	width: 100%;
-   	font-size: 12px;
-   	padding-top: 20px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 12px;
+	padding-top: 20px;
+	margin-top: 30px;
 }
 form {
 	color: #777777;
@@ -104,18 +105,18 @@ form {
 }
 .submit {
 	background-color: #4aaaa5;
-    border: none;
-    color: #ffffff;
-    padding: 10px 30px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 100%;
+	border: none;
+	color: #ffffff;
+	padding: 10px 30px;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 100%;
 }
 .submit:hover {
 	background-color: #666666;
 	color: #ffffff;
 }
-.info{
+.info {
 	width: 100%;
 	padding: 5px;
 	margin-bottom: 10px;
@@ -128,21 +129,21 @@ textarea {
 	box-sizing: border-box;
 }
 .imgbox {
-  	position: relative; 
-  	max-width: 274px; /* Maximum width */
-  	float: left;
-  	margin: 0px 40px 50px 0px;
-  	vertical-align: middle;
+	position: relative; 
+	max-width: 274px; /* Maximum width */
+	float: left;
+	margin: 0px 40px 50px 0px;
+	vertical-align: middle;
 }
 .imgbox .caption {
-  	position: absolute; /* Position the background text */
-  	bottom: 15px; /* At the bottom. Use top:0 to append it to the top */
-  	background-color: #4aaaa5; /* background color of text */
-  	color: #ffffff; /* white text */
-  	width: 100%; /* Covers Full width */
-  	padding: 10px; /* Some padding */
-  	text-align: center; /* Aligns text center*/
-  	box-sizing: border-box; /*padding & border are included in the set width*/
+	position: absolute; /* Position the background text */
+	bottom: 15px; /* At the bottom. Use top:0 to append it to the top */
+	background-color: #4aaaa5; /* background color of text */
+	color: #ffffff; /* white text */
+	width: 100%; /* Covers Full width */
+	padding: 10px; /* Some padding */
+	text-align: center; /* Aligns text center*/
+	box-sizing: border-box; /*padding & border are included in the set width*/
 }
 .imgbox img {
 	width: 274px;
